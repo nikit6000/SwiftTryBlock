@@ -10,14 +10,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-NSException * _Nullable tryBlock(void(NS_NOESCAPE ^_Nonnull tryBlock)(void)) {
-	@try {
-		tryBlock();
-	}
-	@catch (NSException *exception) {
-		return exception;
-	}
-	return nil;
-}
+NSException * _Nullable tryBlock(void(NS_NOESCAPE ^_Nonnull tryBlock)(void));
 
 NS_ASSUME_NONNULL_END
