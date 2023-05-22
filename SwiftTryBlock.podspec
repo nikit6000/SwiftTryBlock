@@ -7,5 +7,5 @@ Pod::Spec.new do |s|
   s.license      = 'MIT'
   s.author       = { 'Nikita Tarkhov' => 'tarhov.nik@gmail.com' }
   s.source       = { git: 'https://github.com/nikit6000/SwiftTryBlock.git', :tag => s.version.to_s }
-  s.source_files = 'SwiftTryBlock.{h,m}'
+  s.source_files = '*.{h,m}'
 end
